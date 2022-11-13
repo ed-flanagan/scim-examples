@@ -22,6 +22,7 @@ After you've read the preparation guide, refer to the deployment example for you
 - [AWS ECS Fargate with Terraform](/aws-ecsfargate-terraform)
 - [Azure Kubernetes Service](https://support.1password.com/scim-deploy-azure/)
 - [Docker Compose & Docker Swarm](/docker)
+- [Heroku](/heroku)
 - [Kubernetes](/kubernetes)
 
 ### Beta deployment
