@@ -14,6 +14,11 @@
     }
   },
   "env": {
+    "OP_REDIS_SSL_ENABLED": {
+      "description": "Enable TLS for the redis connection. (default: 0 (off))",
+      "value": 0,
+      "required": false
+    },
     "OP_SESSION": {
       "description": "Base64-encoded scimsession file 1Password provides you",
       "required": true
