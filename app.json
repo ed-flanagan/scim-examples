@@ -14,16 +14,6 @@
     }
   },
   "env": {
-    "OP_REDIS_INSECURE_SSL": {
-      "description": "Set whether insecure TLS connections to Redis should be permitted when `OP_REDIS_SSL_ENABLED` is set to '1'. (Boolean 0 or 1)",
-      "value": 1,
-      "required": false
-    },
-    "OP_REDIS_SSL_ENABLED": {
-      "description": "Set whether the connection to Redis should be TLS-enabled (Boolean 0 or 1)",
-      "value": 1,
-      "required": false
-    },
     "OP_SESSION": {
       "description": "Base64-encoded scimsession file 1Password provides you",
       "required": true
@@ -39,7 +29,7 @@
   },
   "addons": [
     {
-      "plan": "heroku-redis:premium-0",
+      "plan": "heroku-redis:mini",
       "as": "OP_REDIS",
       "options": {
         "maxmemory_policy": "volatile-lru"
