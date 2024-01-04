@@ -14,9 +14,14 @@
     }
   },
   "env": {
+    "OP_REDIS_INSECURE_SSL": {
+      "description": "Set whether insecure TLS connections to Redis should be permitted when `OP_REDIS_SSL_ENABLED` is set to '1'. (Boolean 0 or 1)",
+      "value": 1,
+      "required": false
+    },
     "OP_REDIS_SSL_ENABLED": {
-      "description": "Enable TLS for the redis connection. (default: 0 (off))",
-      "value": 0,
+      "description": "Set whether the connection to Redis should be TLS-enabled (Boolean 0 or 1)",
+      "value": 1,
       "required": false
     },
     "OP_SESSION": {
@@ -34,7 +39,7 @@
   },
   "addons": [
     {
-      "plan": "heroku-redis:mini",
+      "plan": "heroku-redis:premium-0",
       "as": "OP_REDIS",
       "options": {
         "maxmemory_policy": "volatile-lru"
